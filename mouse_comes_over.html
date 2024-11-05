@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Hover Effect</title>
+  		<style>
+    		.hover {
+      			display: none;
+      			text-align: center;
+    			}
+		body{
+			text-align: center;
+			}
+  		</style>
+	</head>
+	<body bgcolor="#1b85b8">
+		<div id="mainContent" onmouseover="showContent()" onmouseout="hideContent()">
+  			<h2><b>Hover the mouse here to see photo of cherry!</b></h2>
+		</div>
+
+		<div id="hoverContent" class="hover">
+  			<img src="chery.jpg" alt="CHERRY">
+  			<h2><i>This is a photo of cherry</i></h2>
+		</div>
+
+		<script>
+  			function showContent() {
+    						document.getElementById('hoverContent').style.display = 'block';
+  						}
+
+  			function hideContent() {
+   						 document.getElementById('hoverContent').style.display = 'none';
+  						}
+		</script>
+
+	</body>
+</html>
