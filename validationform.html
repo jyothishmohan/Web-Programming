@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body{
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
     <title>Registration Form</title>
-    <script src="validate.js"></script>
+    <script src="validationjs.js"></script>
 </head>
 <body bgcolor="#9cadce">
-<center>
     <h1>REGISTRATION FORM</h1>
     <form onsubmit="return validateForm()">
         <fieldset>
@@ -25,7 +30,7 @@
             <label for="cpwd">Confirmation:</label>
             <input type="password" id="cpwd" name="cpwd">
             <br><br>
-            Gender: 
+            <label>Gender:</label> 
             <input type="radio" id="male" name="gender" value="Male"> Male
             <input type="radio" id="female" name="gender" value="Female"> Female
             <br><br>
@@ -33,7 +38,7 @@
         <fieldset>
             <legend>Contact Details</legend>
             <label for="mob">Mobile No:</label>
-            <input type="number" id="mob" name="mob">
+            <input type="text" id="mob" name="mob" maxlength="10">
             <br><br>
             <label for="address">Address:</label>
             <textarea id="address" name="address" rows="5" cols="15"></textarea>
@@ -44,6 +49,5 @@
         <br>
         <input type="submit" value="SUBMIT">
     </form>
-</center>
 </body>
 </html>
