@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background color changing</title>
+  <style>
+	body{
+		text-align: center;
+	}
+  </style>
+</head>
+<body>
+  <h1>Background color changing</h1>
+  <p>Click the button to change   background color</p>
+
+  <button id="changeColorBtn" onclick="changeColor()">Change Color</button>
+
+  <script>
+    let colorIndex = 0;
+    const colors = ['YELLOW', 'PINK', 'MAROON', 'GREY'];
+
+    function changeColor() {
+      document.body.style.backgroundColor = colors[colorIndex];
+      colorIndex = (colorIndex + 1) % colors.length;
+    }
+  </script>
+</body>
+</html>
